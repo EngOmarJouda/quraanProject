@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+/* Box sizing rules && Remove default margin*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove List style on ul , ol elements with a */
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+/* set core body defaults */
+
+body {
+    text-rendering: optimizeSpeed;
+    background-color: #fffafa;
+}
+
+/* make images easier to work with */
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+:root {
+    /* varibale */
+
+    /* font family */
+
+    /* font size */
+
+    /* color */
+
+    --primaryColor: #f78456;
+    --bghero: #f7f7f7;
+    --footerbg: #3a3650;
+}
+
+/*Log in Style*/
+.login-page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.photo-of-login {
+    width: 50%;
+    background-image: url('../assets/alaqsa-mousq.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.login-elements-page {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.log-in p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 75px;
+    margin-bottom: 3px;
+    color: #000000;
+}
+
+.p-the-login p {
+    color: #222222;
+    opacity: .5;
+
+}
+
+.form-control {
+    height: 45px;
+    border: solid 1px #999999;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 1.5rem;
+    background: #fffbfb;
+}
+
+.login-form label {
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+
+}
+
+.login-form .input-group {
+    width: 100%;
+}

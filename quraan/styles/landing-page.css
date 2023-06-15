@@ -1325,11 +1325,13 @@ h1 {
 .footer ul,
 .footer p {
     list-style-type: none;
+    gap: 20px;
     color: #ffffff;
 }
 
 .footer-logo {
-    width: 8%;
+    gap: 50px;
+    align-items: center;
 
 }
 
@@ -1385,6 +1387,16 @@ h1 {
 
 .list-contact img {
     width: 15%;
+}
+
+.list-one {
+    gap: 12px;
+    text-align: right;
+
+}
+
+.list-sex {
+    gap: 50px;
 }
 
 /* End Footer Style */

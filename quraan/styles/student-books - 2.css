@@ -973,7 +973,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 11px;
-
+    margin-right: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 
@@ -1057,23 +1060,22 @@ a {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    width: 420px;
+    width: 1000px;
     margin: 0 auto;
-    height: 720px;
+    height: 620px;
     overflow: hidden;
 }
 
 .header {
-    height: 70px;
-    width: 420px;
-    background: rgba(66, 66, 66, 1);
+    height: 50px;
+    background: #3D5088;
     text-align: center;
     position: relative;
     z-index: 100;
 }
 
 .header h1 {
-    margin: 0;
+    margin-top: -12px;
     padding: 0;
     font-size: 20px;
     line-height: 50px;
@@ -1144,6 +1146,9 @@ a {
 
 .week {
     background: #4A4A4A;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .day {
@@ -1163,9 +1168,7 @@ a {
 }
 
 .day.today {
-    color: rgb(53 145 212);
-    background-color: #326b82d6;
-    border-radius: 10%;
+    color: rgba(156, 202, 235, 1);
 }
 
 .day-name {
@@ -1220,11 +1223,11 @@ a {
 
 .details {
     position: relative;
-    width: 417px;
-    height: 70px;
+    width: 420px;
+    height: 75px;
     background: rgba(164, 164, 164, 1);
     margin-top: 5px;
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 .details.in {
@@ -1546,7 +1549,6 @@ a {
     }
 }
 
-
 .sidebar ul li a.active {
     color: #FFF;
     width: 200px;
@@ -1554,4 +1556,165 @@ a {
     line-height: 35px;
     border-radius: 10px;
     background: linear-gradient(135deg, #3D5088 0%, #4F6BAA 100%);
+}
+
+.tab-container li:active {
+    background: linear-gradient(96.14deg, #B66D12 0%, #DFAA53 100%);
+    border-radius: 10px;
+    width: 208px;
+    height: 40px;
+    display: flex;
+    padding-right: 2%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card {
+    border-radius: 22px !important;
+    cursor: pointer;
+
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 10px 10px 0px rgba(189, 189, 189, 0.05);
+    backdrop-filter: blur(30px);
+
+
+
+
+}
+
+.card:active {
+    border-radius: 30px;
+    background: linear-gradient(115deg, #FFE9A6 0%, #DFAA53 100%);
+    box-shadow: 0px 10px 15px 0px rgba(207, 185, 151, 0.10);
+    backdrop-filter: blur(30px);
+}
+
+.rateing {
+    width: 90px;
+    position: absolute;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 14px;
+    bottom: 300px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card-title {
+    color: #5976B7;
+    text-align: right;
+    font-size: 22px;
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.card-text {
+    color: #C8882F;
+    text-align: right;
+    font-size: 14px;
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.card-text2 {
+    color: #969AA8;
+    text-align: right;
+    font-size: 15px;
+    font-family: Cairo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.user-profile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-right: 18px;
+
+}
+
+.card.selected {
+    border-radius: 30px;
+    background: linear-gradient(115deg, #FFE9A6 0%, #DFAA53 100%);
+    box-shadow: 0px 10px 15px 0px rgba(207, 185, 151, 0.10);
+    backdrop-filter: blur(30px);
+}
+
+.header-title {
+    color: #333;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.snd-title {
+    color: #3D5088;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.p1-par {
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    /* 187.5% */
+}
+
+
+.title-one {
+    color: #DDA738;
+    font-family: Cairo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    display: flex;
+    align-self: flex-start;
+}
+
+.parag-two {
+    background: linear-gradient(180deg, #000 43.54%, rgba(0, 0, 0, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Cairo;
+    font-size: 24px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    height: 137px;
+    overflow-x: scroll;
+}
+
+.parag-two::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
 }

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+			integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<!--<link href="styles/navbar.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/footer.css" />
+		<link href="styles/shared.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="../styles/student-books.css" />
+		<title>المقرأة</title>
+	</head>
+	<body>
+		<!-- Start Navbar -->
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg">
+			<div id="navbar-for-notifications" class="container-fluid">
+				<!-- <a href="#" class="nav-item nav-link">Login</a> -->
+				<div class="sidebar" id="sidebar">
+					<div class="user-photo">
+						<div class="photo-contaniner">
+							<img src="../assets/student.png" alt="" />
+						</div>
+						<div class="greeting">
+							<h5>مرحباً 👋</h5>
+							<p style="font-weight: 700;font-size: 15px;">يحيى محمد ابو علي</p>
+						</div>
+					</div>
+
+					<ul>
+					
+						<li>
+							<a href="#">
+								<img src="../assets/calendar-2.svg" alt="" />
+								جدولي</a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../assets/brifecase-tick.png" alt="" />
+								مكتبتي</a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../assets/award.svg" alt="" />
+								التقييم والملاحظات</a
+							>
+						</li>
+						
+						<li>
+							<a href="#">
+								<img src="../assets/messages.svg" alt="" />
+								الرسائل للمعلم</a
+							>
+						</li>
+
+						<li style="margin-top: 20%">
+							<button
+								type="button"
+								class="btn btn-light light-below"
+								style="
+									background-color: #fff;
+									display: flex;
+									gap: 3%;
+									border-radius: 10px;
+									width: 256%;
+								"
+							>
+								<img src="../assets/global.svg" alt="" />
+								اللغة
+							</button>
+                            <!-- <div class="popup" id="popup">
+                                <h3>Language Selection</h3>
+                                <p>Choose your preferred language:</p>
+                                Place your language selection options or content here 
+                                <button type="button" onclick="closePopup()">Close</button>
+                            </div> -->
+						</li>
+
+						<li>
+							<button
+								type="button"
+								class="btn btn-light light-below"
+								style="
+									background-color: #fff;
+									display: flex;
+									gap: 3%;
+									border-radius: 10px;
+									width: 183%;
+									margin-top: -28px;
+								"
+							>
+								<img src="../assets/notification-bing2.png" alt="" />
+								الأشعارات
+							</button>
+						</li>
+						<li>
+							<a
+								href=""
+								style="
+									color: #fd2323;
+									border-top: 1px dashed #ebe5e3;
+									width: 149%;
+								"
+							>
+								<img src="../assets/SignOut.svg" alt="" />
+								تسجيل الخروج
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					<!-- Content area -->
+				</div>
+				<button type="button" id="toggleSidebarBtn">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-nav">
+					<!-- <a href="#" class="navbar-brand">Brand</a> -->
+
+					<div class="collapse navbar-collapse collapseDiv" id="navbarCollapse">
+						<div class="navbar-nav">
+							<a href="#" class="nav-item nav-link active">الرئيسية</a>
+							<a href="#" class="nav-item nav-link">خدماتنا</a>
+							<a href="#" class="nav-item nav-link">تواصل معنا</a>
+							<a href="#" class="nav-item nav-link" tabindex="-1">من نحن</a>
+						</div>
+					</div>
+				</div>
+				<div class="menuIcon">
+					<a href="">
+						<img src="../assets/logo-nav.svg" alt="" />
+					</a>
+				</div>
+				<button
+					type="button"
+					class="navbar-toggler"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+		<div class="conatiner-profile">
+			<div class="profile">
+				<div class="profile-tabs">
+					<ul
+						class="nav nav-pills nav-pills-sm nav-pills-label nav-pills-bold tab-container"
+						role=""
+					>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								data-toggle="tab"
+								href="Userprofile.html"
+								role="tab"
+								aria-selected="false"
+							>
+                            الكتب
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link "
+								data-toggle="tab"
+								href="typeAccount.html"
+								role="tab"
+								aria-selected="true"
+							>
+                            الفيديوهات
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								data-toggle="tab"
+								href="#kt_widget6_tab2_content"
+								role="tab"
+								aria-selected="false"
+							>
+                            وثائق أخرى
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="user-profile">
+                        <div class="card active selected" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+						  <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+                          <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+						  <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+						  <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+						  <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../assets/Rectangle123.png" alt="Card image cap">
+                            <div class="rateing">
+                                <img src="../assets/Group 48095558.svg" alt="">
+                                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">4.6</p>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">يحيى محمد ابو علي</h5>
+                              <p class="card-text">شرح منظومة القواعد الفقهية للعلامة: عبد الرحمن بن ناصر السعدي.</p>
+
+                             
+                        </div>
+    
+                          </div>
+    </div>
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+<script src="assets/https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="assets/https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="js/login.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			const checkbox = document.querySelector(
+				".custom-radio input[type='radio']"
+			);
+			const checkmark = document.querySelector(".custom-radio .checkTheVisa");
+
+			checkbox.addEventListener("change", function () {
+				if (this.checked) {
+					checkmark.style.display = "block";
+				} else {
+					checkmark.style.display = "none";
+				}
+			});
+		</script>
+
+		<script>
+			const toggleSidebarBtn = document.getElementById("toggleSidebarBtn");
+			const sidebar = document.getElementById("sidebar");
+
+			toggleSidebarBtn.addEventListener("click", function () {
+				sidebar.classList.toggle("hidden");
+			});
+
+			window.addEventListener("resize", () => {
+				var viewportWidth =
+					window.innerWidth || document.documentElement.clientWidth;
+				if (viewportWidth <= 768) {
+					document.getElementById("sidebar").style.display = "none";
+					document.getElementById("toggleSidebarBtn").style.display = "block";
+				} else {
+					document.getElementById("sidebar").style.display = "block";
+					document.getElementById("toggleSidebarBtn").style.display = "none";
+				}
+			});
+
+			$("#toggleSidebarBtn").on("click", () => {
+				if (document.getElementById("sidebar").style.display == "block")
+					document.getElementById("sidebar").style.display = "none";
+				else document.getElementById("sidebar").style.display = "block";
+			});
+
+            const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove the 'selected' class from all cards
+                cards.forEach(card => card.classList.remove('selected'));
+                // Add the 'selected' class to the clicked card
+                card.classList.add('selected');
+            });
+        });
+		</script>
+	</body>
+</html>

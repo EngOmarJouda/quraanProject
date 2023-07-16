@@ -10,3 +10,16 @@ checkbox.addEventListener("change", function() {
 });
 
 
+$('#button').datepicker()
+.on('changeDate', function(ev){
+    $('#button').datepicker('hide');
+    alert(ev.date.valueOf());
+});
+
+$('#your-datepicker-id').datepicker({
+  dateFormat: "dd/mm/yy", 
+  showOn: "button",
+  buttonText: '<i class="fa fa-calendar"></i>'
+})
+
+

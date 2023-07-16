@@ -206,6 +206,26 @@ a {
 
 .menuIcon {
     margin-top: 5px;
+
+}
+
+
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+.theprayers {
+    animation: scale 2s infinite alternate;
+
 }
 
 @media (max-width: 768px) {
@@ -224,13 +244,39 @@ a {
         margin-bottom: 40px;
         display: none;
     }
+
+    .calender {
+        flex-wrap: wrap;
+
+    }
+
+    .todayDate {
+        flex-wrap: wrap;
+        gap: 23px !important;
+
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.nav-item .login:hover {
+    color: #ffffff;
+    background-color: #344275;
+    border-color: #344275;
 }
 
 /* end nav bar *******************************************************************************************************************************/
 
 /* start section two ************************************************************************************************************************/
 .discreption-one {
-    padding: 60px 97px 50px 97px;
+    padding: 60px 80px 50px 80px;
     color: #ffffff;
     direction: rtl;
     line-height: 56px;
@@ -341,12 +387,43 @@ a {
     left: 11px;
 }
 
+.section4-body,
+.section4-services,
+#services,
+#section5-alaqsa,
+#section6-Omar,
+#section7-live,
+#section8-visa {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
 
+.section4-body.visible,
+.section4-services.visible,
+#services.visible,
+#section5-alaqsa.visible,
+#section6-Omar.visible,
+#section7-live.visible,
+#section8-visa.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#myElement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 .custom-radio input {
     position: absolute;
     opacity: 0;
+    left: 0px;
     cursor: pointer;
+    width: 227px;
+    height: 137px;
 }
 
 .checkmark {
@@ -1167,30 +1244,42 @@ h1 {
 }
 
 .ruin-now {
-    width: 39%;
+    width: 49%;
     color: #ffffff;
     background-color: #DDA738;
     background: #DDA738;
     border-radius: 15px;
     height: 50px;
-
+    border-radius: 20px !important;
 }
 
 .thecost {
-    width: 39%;
+    width: 49%;
     color: #ffffff;
     height: 50px;
     background: #5976B7;
     display: flex;
     border-radius: 15px;
     justify-content: space-between;
+    border-radius: 20px !important;
 }
 
+.thecost :hover {
+    color: #000000;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
 
+.thecost p:hover {
+    color: #000000;
+
+}
 
 .userInfooo {
     gap: 10px;
     margin-top: 3%;
+    width: 80%;
+
 
 }
 
@@ -1208,8 +1297,183 @@ h1 {
     margin-right: -2%;
 }
 
+@media screen and (max-width: 992px) {
+    .visaNews {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        gap: 24px;
+        /* align-items: flex-end;*/
+
+    }
+
+    .heading-with-line h1 {
+        color: #5976B7;
+        text-align: center;
+    }
+
+    .visaNewsRight {
+        align-items: center;
+
+    }
+
+    .ruin-now {
+        width: 48%;
+    }
+
+    .thecost {
+        width: 48%;
+    }
+
+    .bestVisa {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 35%;
+
+    }
+
+    .bestVisa img {
+        width: 35%;
+        margin: auto;
+    }
+
+    .visaAndnumber h2 {
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .visaAndnumber h5 {
+        margin-top: 14px;
+        text-align: center;
+        font-size: 18px;
+
+    }
+}
+
+#radio-the-visa {
+    margin: auto;
+
+}
+
+#checkmark-theVisa {
+    position: absolute;
+    top: unset !important;
+    left: unset !important;
+
+    background-color: #eee;
+    border-radius: 50%;
+    border-color: black;
+
+}
+
+.re-pas-input {
+    direction: rtl;
+}
+
 /***************************end section 8**********************************************************************************************/
 /***************************start section 9**********************************************************************************************/
+.heading-with-line-caro {
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+}
+
+.heading-with-line-caro h1 {
+    color: #5976B7;
+}
+
+
 
 
 /***************************end section 9**********************************************************************************************/
+
+/* Start Footer Style */
+.footer {
+    background-color: #5976B7;
+    padding: 35px;
+    /* height: 30vh; */
+    width: 102%;
+    /* margin-top: 15px; */
+    margin-right: -15px;
+    margin-bottom: -14px;
+}
+
+.footer ul,
+.footer p {
+    list-style-type: none;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.footer-logo {
+    gap: 50px;
+    align-items: center;
+
+}
+
+.header-list {
+    border-bottom: 2px solid;
+    /* margin-bottom: 10px; */
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+.top-above {
+    background-color: #c7c7c7;
+    bottom: 20%;
+
+}
+
+.top2-above {
+    background-color: #ffffff;
+    bottom: 30%;
+
+}
+
+.container-top2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -38%;
+    margin-top: 4rem;
+
+
+}
+
+.top-above img {
+    /* background-color: white; */
+    fill: white;
+}
+
+.top2 img {
+    border-radius: 50%;
+}
+
+.above-icon {
+    border-color: #c7c7c7;
+    width: 39px;
+    height: 39px;
+}
+
+.list-contact img {
+    width: 15%;
+}
+
+.list-one {
+    gap: 12px;
+    text-align: right;
+
+}
+
+.list-sex {
+    gap: 50px;
+}
+
+/* End Footer Style */

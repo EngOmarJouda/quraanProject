@@ -19,16 +19,20 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
 		/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<!--<link href="styles/navbar.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles/footer.css" />
 		<link href="styles/shared.css" rel="stylesheet" />-->
-		<link rel="stylesheet" href="../styles/landing-page.css" />
+		<link rel="stylesheet" href="styles/landing-page.css" />
 
 		<title>المقرأة</title>
 	</head>
-    <body>
-        <div class="hero-section">
+    <body >
+        <div class="hero-section" id="hero-section">
             <div class="container">
    <!-- Start Navbar -->
    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg" >
@@ -47,7 +51,7 @@
                      
                      <div class="collapse navbar-collapse collapseDiv" id="navbarCollapse">
                          <div class="navbar-nav">
-                             <a href="#" class="nav-item nav-link active">الرئيسية</a>
+                             <a href="html-pages/waiting.html" class="nav-item nav-link active">الرئيسية</a>
                              <a href="#" class="nav-item nav-link">خدماتنا</a>
                              <a href="#" class="nav-item nav-link">تواصل معنا</a>
                              <a href="#" class="nav-item nav-link" tabindex="-1">من نحن</a>
@@ -165,7 +169,7 @@
 
 
           </div>
-          <div class="section-4">
+          <div class="section-4" id="section-4">
             <div class="section4-header">
                 <h3>مواعيد الصلاة حسب الموقع الجغرافي لمنطقتك</h3>
                 <div class="calender">
@@ -226,13 +230,13 @@
           <div class="break"></div>
         </div>
     </div>
-          <div class="section4-services">
+          <div class="section4-services" id="section4-services">
             <div class="heading-with-line">
                 <h1>خدماتنا</h1>
                 <div class="line"></div>
               </div>
         </div>
-<div class="services">
+<div class="services" id="services">
     <div id="reservation-forward" class="tracing">
         <div class="services-card-header">
         <div class="imagetracing">
@@ -297,12 +301,12 @@
    
 </div>
 
-<div class="section5-alaqsa">
+<div class="section5-alaqsa" id="section5-alaqsa">
     <div class="heading-with-line">
         <h1>اخبار المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
       </div>
-      <div class="alaqsaNews">
+      <div class="alaqsaNews" id="alaqsaNews">
         <div class="alaqsaNewsRight">
             <h5>اتم اليوم عشر طلاب تسميع القرآن الكريم على جلسة واحدة بحضور عدد من المحفظين وذلك داخل المسجد الأقصى المباركة. </h5>
             <p>افتتاح قسم التحفيظ بالمسجد الأقصى المبارك بثلاث دورات في أحكام التلاوة والتجويد منها دورة عليا برواية حفص عن عاصم، والأخرى دورة تأهيلية، والثالثة دورة قصر المنفصل، وذلك في المسجد الأقصى المبارك، وفي عدد من مساجد المحافظة.</p>
@@ -314,7 +318,7 @@
       </div>
 </div>
 
-<div class="section6-Omar">
+<div class="section6-Omar" id="section6-Omar">
     <div class="heading-with-line">
         <h1>عمر تطبيق المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
@@ -364,7 +368,7 @@
 </div>
 </div>
 
-<div class="section7-live">
+<div class="section7-live" id="section7-live" >
     <div class="heading-with-line">
         <h1>بث مباشر من المسجد الأقصى                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </h1>
         <div class="line-alaqsa"></div>
@@ -378,7 +382,7 @@
       </div>
 </div>
 
-<div class="section8-visa">
+<div class="section8-visa" id="section8-visa" >
     <div class="heading-with-line">
         <h1> تبرع لمقرأة المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
@@ -388,57 +392,230 @@
             <img src="assets/visa.svg" alt="">
         </div>
         <div class="visaNewsRight">
+            
             <div class="card bestVisa">
                 <img class="card-img-top" src="assets/visa1.svg" alt="Card image cap">
                 <div class="visaAndnumber">
                     <h2>VISA CARD</h2>
                     <h5>7463  8472  8472  435</h5>
                 </div>  
-                <label class="custom-radio">
-                    <input type="radio" name="radio" checked="">
-                    <span class="checkmarkere-visa"></span>
-            </label>               
+                <label class="custom-radio" id="radio-the-visa">
+                    <input type="radio" name="radio">
+                    <span id="checkmark-theVisa" class="checkmark"></span>
+            </label>           
             </div>
-            <div class="row">
+          
                
                 <div class="input-group mb-3 userInfo">
-                    <input type="text" class="form-control welcome-user-input"  data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" value="" placeholder="الاسم على البطاقة">
+                    <input type="text" class="form-control welcome-user-input"  data-val="true" data-val-email="The username field is not a valid e-mail address." data-val-required="The UserName field is required." id="Email" name="userName" value="" placeholder="الاسم على البطاقة">
 
                 </div>
                 
                 <div class="input-group mb-3 userInfo">
-                    <input type="password" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="رقم البطاقة">
-                    <a class="reveal-password" style="position: absolute; left: 5%; margin: 1%;">
+                    <input type="number" class="form-control re-pas-input"  data-val="true" data-val-required="The Card field is required." id="CardNumber" name="CardNumber" placeholder="رقم البطاقة">
                     </a>
                 </div>                
                 <div class="input-group mb-3 userInfoo">
 
-                <input type="password" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="تاريخ انتهاء البطاقة">
-                <input type="password" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="كود البطاقة">
-            </div>
+                    <input type="date" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="تاريخ إنتهاء البطاقة">
+                    <input type="number" class="form-control re-pas-input" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="كود البطاقة" maxlength="4" oninput="limitDigits(this.value)">
+                </div>
 
                 
             <div class="input-group mb-3 userInfooo">
                 <button type="submit" class="btn btn-primary thecost">
                          <p style="
                          margin: auto;
-                     ">مبلغ التبرع</p>
-                         <p style="
-                         margin: auto;
-                     ">20.00$</p>
+                     ">مبلغ التبرع
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <span>20.00$</span></p>
                     </button>
                     <button type="button" class="btn btn-warning ruin-now">تبرع الان</button>
                 </div>
-            </div>
+            
 
             </div>
       </div>
 </div>
 
-<div class="section9-slider">
-
+<div class="section9-slider" id="section9-slider">
+    <div class="heading-with-line-caro">
+        <h1>مساقات مقرأة المسجد الأقصى</h1>
+        <div class="line-alaqsa"></div>
+      </div>  
+     
+         
 </div>
 
+
+ <!-- Footer Start -->
+ <div class=" footer footer-pages">
+    <div class="d-flex justify-content-evenly">
+
+        <div class="d-flex flex-column bd-highlight mb-3 footer-logo">
+            <img src="assets/logo-footer.svg" alt="" style="
+            width: 58%;
+        ">
+            <img class="text-footer-image" src="assets/logo-text-footer.svg" alt="">
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 list-one">
+            <p class="header-list">
+                من
+                نحن
+            </p>
+            <ul class="list-group">
+                <li class="">
+                    من
+                    نحن
+                </li>
+                <li class="">
+                    خدماتنا
+                </li>
+                <li class="">
+                    مساقات 
+                </li>
+                <li class="">
+                    تسجيل اطفالك
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 list-contact">
+            <p class="header-list">
+                اتصل
+                بنا
+            </p>
+            <ul class="list-group">
+                <li class="" style="
+                display: flex;
+                margin-top: 8%;
+                justify-content: space-between;
+            ">
+                    <img src="assets/location.svg" alt="">
+                    <span style="color: red;">فلسطين</span>
+                    |
+                    القدس
+                </li>
+                <li class="" style="
+                display: flex;
+                margin-top: 8%;
+                justify-content: space-between;
+            ">
+                    <img src="assets/whatsapp.svg" alt="">
+                    0529931195
+                </li>
+                <li class="" style="
+                display: flex;
+                margin-top: 8%;
+                justify-content: space-between;
+            ">
+                    <img src="assets/sms.svg" alt="">
+                    info@yahia.ilfe
+                </li>
+                <li class="" style="display: flex;justify-content: space-between;">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.5" cy="12.5" r="12" stroke="white" />
+                        <path
+                            d="M16.3333 18.3332H9.66668C7.66668 18.3332 6.33334 16.9998 6.33334 14.9998V10.9998C6.33334 8.99984 7.66668 7.6665 9.66668 7.6665H16.3333C18.3333 7.6665 19.6667 8.99984 19.6667 10.9998V14.9998C19.6667 16.9998 18.3333 18.3332 16.3333 18.3332Z"
+                            stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12.6 11.3332L14.2667 12.3332C14.8667 12.7332 14.8667 13.3332 14.2667 13.7332L12.6 14.7332C11.9333 15.1332 11.4 14.7999 11.4 14.0665V12.0665C11.4 11.1999 11.9333 10.9332 12.6 11.3332Z"
+                            stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.9041 18.4874C20.5416 18.729 20.2999 18.729 20.0582 18.8499C19.8166 18.8499 19.6957 18.9707 19.5749 19.0915C19.3332 19.0915 19.3332 19.3332 19.3332 19.454C19.3332 19.5749 19.3332 19.6957 19.2124 19.8165C19.0916 19.9374 18.8499 19.9374 18.6082 19.9374C18.2457 19.9374 17.7624 19.9374 17.2791 20.179C17.0374 20.2999 16.7957 20.4207 16.5541 20.5415C16.0707 20.904 15.5874 21.1457 14.6207 21.1457C13.6541 21.1457 13.1707 20.7832 12.6874 20.5415C12.4457 20.4207 12.2041 20.179 11.9624 20.179C11.4791 20.0582 10.9957 19.9374 10.6332 19.9374C10.3916 19.9374 10.1499 19.9374 10.0291 19.8165C9.66657 19.6957 9.66657 19.5749 9.66657 19.454C9.66657 19.3332 9.66657 19.0915 9.4249 19.0915C9.30407 18.9707 9.0624 18.9707 8.94157 18.8499C8.6999 18.729 8.45824 18.729 8.09574 18.4874C7.73324 18.2457 7.9749 18.1249 8.09574 18.004C10.3916 16.9165 10.7541 15.104 10.7541 14.9832C10.7541 14.8624 10.7541 14.7415 10.6332 14.6207C10.5124 14.4999 10.1499 14.2582 9.7874 14.1374C9.66657 14.0165 9.54574 14.0165 9.4249 13.8957C9.0624 13.654 8.94157 13.4124 9.0624 13.1707C9.18324 12.929 9.30407 12.929 9.54574 12.929C9.66657 12.929 9.66657 12.929 9.7874 12.929C10.0291 12.929 10.2707 13.0499 10.3916 13.1707C10.5124 13.1707 10.6332 13.2915 10.7541 13.2915C10.7541 13.2915 10.7541 13.2915 10.8749 13.2915C10.9957 13.2915 10.9957 13.2915 10.9957 13.0499V12.929C10.9957 12.5665 10.8749 11.7207 10.9957 11.1165C11.1166 10.1499 11.3582 9.5457 11.8416 9.1832C12.0832 8.94154 12.9291 8.0957 14.6207 8.0957C16.3124 8.0957 17.1582 9.06237 17.3999 9.1832C17.7624 9.66654 18.1249 10.1499 18.2457 11.1165C18.3666 11.8415 18.2457 12.5665 18.2457 13.0499C18.2457 13.1707 18.2457 13.2915 18.3666 13.2915C18.3666 13.2915 18.3666 13.2915 18.4874 13.2915C18.6082 13.2915 18.7291 13.1707 18.8499 13.1707C19.0916 13.0499 19.2124 13.0499 19.4541 12.929C19.4541 12.929 19.5749 12.929 19.6957 12.929C19.9374 12.929 20.0582 13.0499 20.1791 13.1707C20.2999 13.4124 20.1791 13.654 19.8166 13.8957C19.6957 13.8957 19.5749 14.0165 19.4541 14.1374C19.2124 14.379 18.7291 14.6207 18.6082 14.6207C18.4874 14.7415 18.4874 14.8624 18.4874 14.9832C18.4874 15.104 18.8499 16.7957 21.1457 18.004C21.1457 18.1249 21.3874 18.2457 20.9041 18.4874Z"
+                            stroke="white" stroke-miterlimit="10" stroke-linejoin="round" />
+                        <path
+                            d="M14.5 26.5832C21.1735 26.5832 26.5834 21.1733 26.5834 14.4998C26.5834 7.8264 21.1735 2.4165 14.5 2.4165C7.82659 2.4165 2.4167 7.8264 2.4167 14.4998C2.4167 21.1733 7.82659 26.5832 14.5 26.5832Z"
+                            stroke="white" stroke-miterlimit="10" stroke-linejoin="round" />
+                    </svg>
+                    <!-- Twitter -->
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.9293 8.42299C20.8347 8.26911 20.6616 8.18189 20.4814 8.19752L19.6836 8.26702L20.4462 6.72974C20.537 6.54664 20.5011 6.32605 20.357 6.18114C20.2128 6.03624 19.9925 5.9993 19.8089 6.08917L17.7906 7.07764C16.5436 6.41933 14.9857 6.61474 13.9137 7.59127C13.019 8.40627 12.5487 9.65961 12.6364 10.9095C10.298 10.6751 8.31865 9.33664 7.14821 7.17395C7.07056 7.03049 6.92496 6.93664 6.76224 6.92511C6.59921 6.91377 6.44215 6.98602 6.34509 7.11717C5.61915 8.09786 5.56821 9.44249 6.13731 10.5487C5.98043 10.5091 5.81349 10.4555 5.62837 10.3936C5.46977 10.3406 5.29493 10.3745 5.16765 10.483C5.04037 10.5915 4.97918 10.7588 5.0064 10.9238C5.23159 12.289 6.02771 13.3383 7.28534 13.9594C7.12159 14.0164 6.95449 14.0627 6.78459 14.0981C6.61577 14.1333 6.47909 14.2568 6.42706 14.4212C6.37502 14.5856 6.41571 14.7653 6.53352 14.8912C7.43918 15.8592 8.74743 16.3357 9.67668 16.5643C8.62012 17.3917 7.47959 17.5301 5.82227 17.4732C5.63043 17.4674 5.45368 17.5755 5.37302 17.7494C5.2924 17.9233 5.32368 18.1286 5.45252 18.2707C6.1434 19.0322 8.66046 19.8909 11.3065 19.9553C11.4111 19.9578 11.5179 19.9592 11.6269 19.9592C13.4847 19.9591 15.9401 19.5609 17.7025 17.7985C19.0364 16.4645 19.8708 14.9289 20.1823 13.2343C20.434 11.8657 20.2749 10.7697 20.1985 10.2429C20.1929 10.2042 20.1869 10.1631 20.182 10.1272L20.9283 8.92436C21.0235 8.77092 21.0239 8.57686 20.9293 8.42299ZM19.2541 10.3799C19.3957 11.3557 19.8265 14.3249 17.0277 17.1237C15.4008 18.7505 13.0312 19.0427 11.3296 19.0013C9.87774 18.966 8.57906 18.6883 7.63781 18.3716C8.01996 18.3248 8.36052 18.2525 8.68199 18.1525C9.56821 17.8771 10.3169 17.3814 11.0381 16.5927C11.1583 16.4612 11.1952 16.2738 11.134 16.1065C11.0727 15.9393 10.9233 15.8201 10.7466 15.7975C10.2916 15.7392 8.92459 15.509 7.84809 14.7665C8.15831 14.6396 8.45749 14.4808 8.74318 14.2913C8.8999 14.1873 8.98096 14.001 8.95009 13.8155C8.91924 13.63 8.78234 13.4798 8.6004 13.4321C7.71931 13.2011 6.65593 12.6843 6.16559 11.5304C6.47871 11.5853 6.81918 11.5986 7.18231 11.5172C7.35062 11.4795 7.48549 11.3539 7.53499 11.1886C7.58452 11.0234 7.54102 10.8442 7.42121 10.7202C6.81109 10.0882 6.58293 9.17755 6.77868 8.39827C7.41974 9.33517 8.2319 10.1237 9.1624 10.7066C10.3527 11.4524 11.7421 11.8646 13.1802 11.8984C13.3266 11.9015 13.4669 11.8376 13.5601 11.7243C13.6532 11.6109 13.6891 11.461 13.6572 11.3178C13.4098 10.2055 13.7627 9.01964 14.5563 8.29674C15.3794 7.54689 16.596 7.43314 17.5146 8.0203C17.6549 8.10995 17.8319 8.11999 17.9814 8.04674L18.9671 7.56399L18.4512 8.60402C18.3745 8.75855 18.3872 8.94242 18.4845 9.08489C18.5816 9.22736 18.7479 9.30645 18.92 9.29136L19.6151 9.23083L19.2949 9.74692C19.1874 9.92014 19.2097 10.0738 19.2541 10.3799Z"
+                            fill="white" />
+                        <circle cx="12.5" cy="12.5" r="12" stroke="white" />
+                    </svg>
+
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_855_8617)">
+                            <path
+                                d="M12.5 7.17108C14.2355 7.17108 14.4413 7.17758 15.1265 7.209C15.835 7.2415 16.5647 7.40292 17.0809 7.91913C17.602 8.44021 17.7585 9.16279 17.791 9.87346C17.8224 10.5587 17.8289 10.7645 17.8289 12.5C17.8289 14.2355 17.8224 14.4413 17.791 15.1265C17.759 15.8313 17.5938 16.5679 17.0809 17.0809C16.5598 17.602 15.8378 17.7585 15.1265 17.791C14.4413 17.8224 14.2355 17.8289 12.5 17.8289C10.7645 17.8289 10.5587 17.8224 9.87346 17.791C9.17417 17.759 8.42775 17.59 7.91913 17.0809C7.40075 16.5625 7.2415 15.8329 7.209 15.1265C7.17758 14.4413 7.17108 14.2355 7.17108 12.5C7.17108 10.7645 7.17758 10.5587 7.209 9.87346C7.24096 9.17146 7.40779 8.43046 7.91913 7.91913C8.43913 7.39913 9.16442 7.2415 9.87346 7.209C10.5587 7.17758 10.7645 7.17108 12.5 7.17108ZM12.5 6C10.7347 6 10.5132 6.00758 9.81983 6.039C8.81504 6.08504 7.81729 6.36454 7.09092 7.09092C6.36183 7.82 6.08504 8.81558 6.039 9.81983C6.00758 10.5132 6 10.7347 6 12.5C6 14.2653 6.00758 14.4868 6.039 15.1802C6.08504 16.1839 6.36562 17.1843 7.09092 17.9091C7.81946 18.6376 8.81667 18.915 9.81983 18.961C10.5132 18.9924 10.7347 19 12.5 19C14.2653 19 14.4868 18.9924 15.1802 18.961C16.1844 18.915 17.1833 18.6349 17.9091 17.9091C18.6387 17.1795 18.915 16.1844 18.961 15.1802C18.9924 14.4868 19 14.2653 19 12.5C19 10.7347 18.9924 10.5132 18.961 9.81983C18.915 8.81504 18.6349 7.81675 17.9091 7.09092C17.1816 6.36346 16.1817 6.0845 15.1802 6.039C14.4868 6.00758 14.2653 6 12.5 6Z"
+                                fill="white" />
+                            <path
+                                d="M12.5 9.16211C10.6567 9.16211 9.16225 10.6566 9.16225 12.4999C9.16225 14.3432 10.6567 15.8376 12.5 15.8376C14.3433 15.8376 15.8377 14.3432 15.8377 12.4999C15.8377 10.6566 14.3433 9.16211 12.5 9.16211ZM12.5 14.6665C11.3035 14.6665 10.3333 13.6964 10.3333 12.4999C10.3333 11.3033 11.3035 10.3332 12.5 10.3332C13.6965 10.3332 14.6667 11.3033 14.6667 12.4999C14.6667 13.6964 13.6965 14.6665 12.5 14.6665Z"
+                                fill="white" />
+                            <path
+                                d="M15.9699 9.81C16.4007 9.81 16.7499 9.46078 16.7499 9.03C16.7499 8.59922 16.4007 8.25 15.9699 8.25C15.5391 8.25 15.1899 8.59922 15.1899 9.03C15.1899 9.46078 15.5391 9.81 15.9699 9.81Z"
+                                fill="white" />
+                        </g>
+                        <circle cx="12.5" cy="12.5" r="12" stroke="white" />
+                        <defs>
+                            <clipPath id="clip0_855_8617">
+                                <rect width="13" height="13" fill="white" transform="translate(6 6)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 list-one">
+            <p class="header-list">
+                خريطة
+                الموقع
+            </p>
+            <ul class="list-group">
+                <li class="">
+                    خدماتنا
+                </li>
+                <li class="">
+                    أخبار عن المسجد الأقصى
+                </li>
+                <li class="">
+                    بث مباشر من المسجد الأقصى
+                </li>
+                <li class="">
+                    مساقات وشروحات من المسجد الأقصى
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 list-one">
+            <p class="header-list">
+                روابط
+                مهمة
+            </p>
+            <ul class="list-group">
+                <li class="">
+                    تبرع لمقرأة المسجد الأقصى
+                </li>
+                <li class="">
+                    بث مباشر من داخل المسجد الأقصى
+                </li>
+                <li class="">
+                    تطبيق عمر تطبيق المسجد الأقصى
+                </li>
+                <li class="">
+                    مساقات من داخل المسجد الأقصى
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 list-sex">
+            <div class="container-top2 top-above">
+                <a href="#navbar" class="top2">
+                    <img class="above-icon" src="assets/up.svg" alt="">
+                </a>
+            </div>
+            <div class="container-top2 top2-above">
+                <a href="#" class="top2">
+                    <img class="top2-img" src="assets/mssg.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- footer end -->
 
         </html>
         <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -453,7 +630,13 @@
         <script src="assets/https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+        <script src="js/login.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   
         <script>
 const checkbox = document.querySelector(".custom-radio input[type='radio']");
 const checkmark = document.querySelector(".custom-radio .checkTheVisa");
@@ -465,8 +648,177 @@ checkbox.addEventListener("change", function() {
     checkmark.style.display = "none";
   }
 });
+
+// function limitDigits(value) {
+//   if (value.length > 4) {
+//     value = value.slice(0, 4);
+//     document.getElementById("Password").value = value;
+//   }
+// }
+
+
+function limitDigits(input) {
+  input.value = input.value.replace(/\D/g, "").slice(0, 4);
+}
+
         </script>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    // Check the position of each section relative to the window's scrollTop
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    // Adjust the values as per your needs
+    $('#section4-services').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+
+    $('#section5-alaqsa').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+
+    $('#section6-Omar').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+  });
+});
+
+// Function to check if an element is in the viewport
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle the scroll event
+function handleScroll() {
+  // Get all the sections
+  var sections = document.querySelectorAll (".services, .section5-alaqsa, .section6-Omar, .section7-live, .section8-visa, .section9-slider");
+
+  // Loop through each section
+  sections.forEach(function (section) {
+    // Check if the section is in the viewport
+    if (isElementInViewport(section)) {
+      // Add a CSS class to make the section visible
+      section.classList.add("visibleee");
+    }
+  });
+}
+
+// Attach the handleScroll function to the scroll event
+window.addEventListener("scroll", handleScroll);
+
+// Trigger the handleScroll function on page load
+window.addEventListener("load", handleScroll);
+  // JavaScript code to handle scroll event
+  window.addEventListener('scroll', function() {
+      var services = document.getElementById('section4-services');
+      var section5 = document.getElementById('section5-alaqsa');
+      var section6 = document.getElementById('section6-Omar');
+      var section7 = document.getElementById('section7-live');
+      var section8 = document.getElementById('section8-visa');
+      var section9 = document.getElementById('section9-slider');
+  
+      if (isElementInViewport(services)) {
+        services.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section5)) {
+        section5.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section6)) {
+        section6.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section7)) {
+        section7.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section8)) {
+        section8.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section9)) {
+        section9.classList.add('visibleee');
+      }
+    });
+  
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }  </script>
+</script> -->
+    
+
+
+<script>
+    document.addEventListener("scroll", function() {
+  var scrollPosition = window.scrollY;
+  var section4Offset = document.getElementById("section-4").offsetTop;
+  var section4Body = document.querySelector(".section4-body");
+  var section4Services = document.querySelector(".section4-services");
+  var services = document.getElementById("services");
+  var section5Alaqsa = document.getElementById("section5-alaqsa");
+  var section6Omar = document.getElementById("section6-Omar");
+  var section7Live = document.getElementById("section7-live");
+  var section8Visa = document.getElementById("section8-visa");
+
+  if (scrollPosition >= section4Offset - window.innerHeight / 2) {
+    section4Body.classList.add("visible");
+  }
+
+  if (scrollPosition >= section4Offset + section4Body.offsetHeight) {
+    section4Services.classList.add("visible");
+  }
+
+  if (scrollPosition >= services.offsetTop - window.innerHeight / 2) {
+    services.classList.add("visible");
+  }
+
+  if (scrollPosition >= section5Alaqsa.offsetTop - window.innerHeight / 2) {
+    section5Alaqsa.classList.add("visible");
+  }
+
+  if (scrollPosition >= section6Omar.offsetTop - window.innerHeight / 2) {
+    section6Omar.classList.add("visible");
+  }
+
+  if (scrollPosition >= section7Live.offsetTop - window.innerHeight / 2) {
+    section7Live.classList.add("visible");
+  }
+
+  if (scrollPosition >= section8Visa.offsetTop - window.innerHeight / 2) {
+    section8Visa.classList.add("visible");
+  }
+});
+
+</script>
 </body>
 
 </html>

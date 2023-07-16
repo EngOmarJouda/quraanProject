@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+/* Box sizing rules && Remove default margin*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove List style on ul , ol elements with a */
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+/* set core body defaults */
+
+body {
+    text-rendering: optimizeSpeed;
+    background-color: #F5F5F5;
+    font-family: 'Cairo';
+    padding: 1%;
+
+}
+
+/* make images easier to work with */
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+:root {
+
+    --primaryColor: #f78456;
+    --bghero: #f7f7f7;
+    --footerbg: #3a3650;
+}
+
+@font-face {
+    font-family: 'Cairo' !important;
+    src: url('assets/font/Cairo_family.ttf') !important;
+}
+
+/* start the hero section */
+.hero-section {
+    background-image: url('../assets/Rectangle\ 39994.svg');
+    background-size: cover;
+    background-position: unset;
+}
+
+.hero-section h2,
+.hero-section h1,
+.hero-section h3 {
+    text-align: center;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1918px !important;
+    }
+}
+
+/* nav bar start ***************************************************************************************************************/
+
+.login {
+    margin-left: 30px;
+    width: 146px;
+    height: 33px;
+    padding: 0 !important;
+    border-radius: 5px;
+}
+
+.logoDiv {
+    padding: 0;
+}
+
+.navbar-nav a {
+    margin-left: 15px;
+}
+
+.collapseDiv a {
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 45px;
+    text-transform: capitalize;
+
+    color: #DFAA53 !important;
+}
+
+.logoDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoPar p {
+    color: #4894fe;
+}
+
+.logoPar img {
+    width: 94px;
+    height: 64.95px;
+    /* margin-top: 50px; */
+}
+
+.logoImg {
+    width: 73px;
+    height: 64.95px;
+    padding: 0 !important;
+    margin-left: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    background-color: none !important;
+}
+
+.navbar-nav {
+    gap: 3rem;
+}
+
+.nav-item .login {
+    color: #ffffff;
+    background: #3D5088;
+    border: 1px solid #3D5088;
+    border-radius: 10px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff0;
+    border-color: #fff0;
+    color: #3D5088;
+}
+
+.notification:hover {
+    background-color: #fff0;
+    border-color: #fff0;
+}
+
+.notification:active {
+    background-color: #fff0;
+    border-color: #fff0;
+}
+
+.notification:active:hover {
+    background-color: #fff0;
+    border-color: #fff0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif-butt {
+    margin-left: 10px;
+}
+
+
+.login:active {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+
+
+.notification:active {
+    background-color: #ffffff00 !important;
+    border-color: #ffffff00 !important;
+    box-shadow: none !important;
+
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.collapseDiv a {
+    font-size: 22px !important;
+}
+
+.menuIcon {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menuIcon {
+        margin-bottom: 40px;
+        display: none;
+    }
+}
+
+/* end nav bar *******************************************************************************************************************************/
+
+/* start Section 1  *******************************************************************************************************************************/
+
+.animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-1 img {
+    width: 50%;
+    margin: auto;
+    margin-top: -15%;
+
+}
+
+.animation-2 img {
+    width: 82%;
+    margin: auto;
+    margin-top: -15%;
+    margin-right: 12%;
+}
+
+
+.text-animation {
+    margin-top: 2%;
+    margin-right: 2%;
+
+}
+
+.text-animation h2 {
+    text-align: center;
+    color: #344275;
+}
+
+.back-to {
+    width: 53%;
+    background: #DFAA53;
+    border-radius: 25px;
+    /* height: 100px; */
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    color: #fff;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 72px;
+    text-align: right;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 22%;
+}

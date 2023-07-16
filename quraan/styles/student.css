@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+/* Box sizing rules && Remove default margin*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove List style on ul , ol elements with a */
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+/* set core body defaults */
+
+body {
+    text-rendering: optimizeSpeed;
+    background-color: #fffafa;
+}
+
+/* make images easier to work with */
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+:root {
+    /* varibale */
+
+    /* font family */
+
+    /* font size */
+
+    /* color */
+
+    --primaryColor: #f78456;
+    --bghero: #f7f7f7;
+    --footerbg: #3a3650;
+}
+
+/*Log in Style*/
+.login-page {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.photo-of-login {
+    width: 50%;
+    background-image: url('../assets/unsplash_gsFbL3qHWEg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1%;
+}
+
+.login-elements-page {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.log-in p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 75px;
+    margin-bottom: 3px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.p-the-login p {
+    color: #222222;
+    opacity: .5;
+
+}
+
+.form-control {
+    height: 45px;
+    border: solid 1px #999999;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background: #fffbfb;
+}
+
+.login-form label {
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+
+}
+
+.login-form .input-group {
+    width: 100%;
+}
+
+.remeber-and-sure {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.login-now {
+    width: 570px;
+    color: #ffffff;
+    background-color: #DDA738;
+}
+
+.creadt-acc {
+    color: #415898;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.terms-checkbox {
+    display: none;
+    /* Hide the checkbox */
+
+}
+
+.terms-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.terms-label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.terms-label:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #555;
+}
+
+input[type="checkbox"]:checked+.terms-label:after {
+    display: block;
+}
+
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 768px) {
+
+
+    .login-elements-page {
+        display: flex;
+        width: 155% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-page {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 920px) {
+    .login-form {
+        margin-right: calc(7vw + 5%);
+
+    }
+}
+
+@media (max-width: 919px) and (min-width: 769px) {
+    .login-form {
+        margin-right: calc(11vw + 8%);
+
+    }
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .radio-container input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+} */
+
+.radio-container label {
+    display: inline-block;
+    width: 40px;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    background-color: #EFEFEF;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-container input[type="radio"]:checked+label {
+    background-color: #a9a9a9;
+}
+
+.radio-container .one:after {
+    content: "ممتاز";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    color: #4F6BAA;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.radio-container .two:after {
+    content: "جيد";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    color: #4F6BAA;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+
+}
+
+.radio-container .three:after {
+    content: "مقبول";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    color: #4F6BAA;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+
+}
+
+.radio-container .four:after {
+    content: "ضعيف";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    color: #4F6BAA;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+
+}
+
+.radio1 {
+    opacity: 0;
+    position: absolute;
+    height: 40px;
+    width: 38px;
+}
+
+.radio2 {
+    opacity: 0;
+    position: absolute;
+    height: 42px;
+    right: 87px;
+    width: 45px;
+}
+
+.radio3 {
+    opacity: 0;
+    position: absolute;
+    height: 42px;
+    right: 162px;
+    width: 45px;
+}
+
+.radio4 {
+    opacity: 0;
+    position: absolute;
+    height: 41px;
+    right: 237px;
+    width: 46px;
+}

@@ -22,20 +22,17 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-  `
+  
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<!--<link href="styles/navbar.css" rel="stylesheet" />
 		<link rel="stylesheet" href="styles/footer.css" />
 		<link href="styles/shared.css" rel="stylesheet" />-->
-		<link rel="stylesheet" href="../styles/landing-page.css" />
+		<link rel="stylesheet" href="styles/landing-page.css" />
 
 		<title>المقرأة</title>
 	</head>
-    <body style="
-    padding-top: unset !important;
-    padding-bottom: unset !important;
-">
-        <div class="hero-section">
+    <body >
+        <div class="hero-section" id="hero-section">
             <div class="container">
    <!-- Start Navbar -->
    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg" >
@@ -54,7 +51,7 @@
                      
                      <div class="collapse navbar-collapse collapseDiv" id="navbarCollapse">
                          <div class="navbar-nav">
-                             <a href="#" class="nav-item nav-link active">الرئيسية</a>
+                             <a href="html-pages/waiting.html" class="nav-item nav-link active">الرئيسية</a>
                              <a href="#" class="nav-item nav-link">خدماتنا</a>
                              <a href="#" class="nav-item nav-link">تواصل معنا</a>
                              <a href="#" class="nav-item nav-link" tabindex="-1">من نحن</a>
@@ -172,7 +169,7 @@
 
 
           </div>
-          <div class="section-4">
+          <div class="section-4" id="section-4">
             <div class="section4-header">
                 <h3>مواعيد الصلاة حسب الموقع الجغرافي لمنطقتك</h3>
                 <div class="calender">
@@ -233,13 +230,13 @@
           <div class="break"></div>
         </div>
     </div>
-          <div class="section4-services">
+          <div class="section4-services" id="section4-services">
             <div class="heading-with-line">
                 <h1>خدماتنا</h1>
                 <div class="line"></div>
               </div>
         </div>
-<div class="services">
+<div class="services" id="services">
     <div id="reservation-forward" class="tracing">
         <div class="services-card-header">
         <div class="imagetracing">
@@ -304,12 +301,12 @@
    
 </div>
 
-<div class="section5-alaqsa">
+<div class="section5-alaqsa" id="section5-alaqsa">
     <div class="heading-with-line">
         <h1>اخبار المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
       </div>
-      <div class="alaqsaNews">
+      <div class="alaqsaNews" id="alaqsaNews">
         <div class="alaqsaNewsRight">
             <h5>اتم اليوم عشر طلاب تسميع القرآن الكريم على جلسة واحدة بحضور عدد من المحفظين وذلك داخل المسجد الأقصى المباركة. </h5>
             <p>افتتاح قسم التحفيظ بالمسجد الأقصى المبارك بثلاث دورات في أحكام التلاوة والتجويد منها دورة عليا برواية حفص عن عاصم، والأخرى دورة تأهيلية، والثالثة دورة قصر المنفصل، وذلك في المسجد الأقصى المبارك، وفي عدد من مساجد المحافظة.</p>
@@ -321,7 +318,7 @@
       </div>
 </div>
 
-<div class="section6-Omar">
+<div class="section6-Omar" id="section6-Omar">
     <div class="heading-with-line">
         <h1>عمر تطبيق المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
@@ -371,7 +368,7 @@
 </div>
 </div>
 
-<div class="section7-live">
+<div class="section7-live" id="section7-live" >
     <div class="heading-with-line">
         <h1>بث مباشر من المسجد الأقصى                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </h1>
         <div class="line-alaqsa"></div>
@@ -385,7 +382,7 @@
       </div>
 </div>
 
-<div class="section8-visa">
+<div class="section8-visa" id="section8-visa" >
     <div class="heading-with-line">
         <h1> تبرع لمقرأة المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
@@ -420,9 +417,9 @@
                 </div>                
                 <div class="input-group mb-3 userInfoo">
 
-                    <input type="password" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="تاريخ إنتهاء البطاقة">
-                    <input type="password" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="كود البطاقة">
-            </div>
+                    <input type="date" class="form-control re-pas-input"  data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="تاريخ إنتهاء البطاقة">
+                    <input type="number" class="form-control re-pas-input" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="كود البطاقة" maxlength="4" oninput="limitDigits(this.value)">
+                </div>
 
                 
             <div class="input-group mb-3 userInfooo">
@@ -441,7 +438,7 @@
       </div>
 </div>
 
-<div class="section9-slider">
+<div class="section9-slider" id="section9-slider">
     <div class="heading-with-line-caro">
         <h1>مساقات مقرأة المسجد الأقصى</h1>
         <div class="line-alaqsa"></div>
@@ -651,8 +648,177 @@ checkbox.addEventListener("change", function() {
     checkmark.style.display = "none";
   }
 });
+
+// function limitDigits(value) {
+//   if (value.length > 4) {
+//     value = value.slice(0, 4);
+//     document.getElementById("Password").value = value;
+//   }
+// }
+
+
+function limitDigits(input) {
+  input.value = input.value.replace(/\D/g, "").slice(0, 4);
+}
+
         </script>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    // Check the position of each section relative to the window's scrollTop
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    // Adjust the values as per your needs
+    $('#section4-services').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+
+    $('#section5-alaqsa').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+
+    $('#section6-Omar').each(function() {
+      var position = $(this).offset().top;
+
+      if (position < scrollTop + windowHeight) {
+        $(this).addClass('animate');
+      }
+    });
+  });
+});
+
+// Function to check if an element is in the viewport
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Function to handle the scroll event
+function handleScroll() {
+  // Get all the sections
+  var sections = document.querySelectorAll (".services, .section5-alaqsa, .section6-Omar, .section7-live, .section8-visa, .section9-slider");
+
+  // Loop through each section
+  sections.forEach(function (section) {
+    // Check if the section is in the viewport
+    if (isElementInViewport(section)) {
+      // Add a CSS class to make the section visible
+      section.classList.add("visibleee");
+    }
+  });
+}
+
+// Attach the handleScroll function to the scroll event
+window.addEventListener("scroll", handleScroll);
+
+// Trigger the handleScroll function on page load
+window.addEventListener("load", handleScroll);
+  // JavaScript code to handle scroll event
+  window.addEventListener('scroll', function() {
+      var services = document.getElementById('section4-services');
+      var section5 = document.getElementById('section5-alaqsa');
+      var section6 = document.getElementById('section6-Omar');
+      var section7 = document.getElementById('section7-live');
+      var section8 = document.getElementById('section8-visa');
+      var section9 = document.getElementById('section9-slider');
+  
+      if (isElementInViewport(services)) {
+        services.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section5)) {
+        section5.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section6)) {
+        section6.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section7)) {
+        section7.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section8)) {
+        section8.classList.add('visibleee');
+      }
+  
+      if (isElementInViewport(section9)) {
+        section9.classList.add('visibleee');
+      }
+    });
+  
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }  </script>
+</script> -->
+    
+
+
+<script>
+    document.addEventListener("scroll", function() {
+  var scrollPosition = window.scrollY;
+  var section4Offset = document.getElementById("section-4").offsetTop;
+  var section4Body = document.querySelector(".section4-body");
+  var section4Services = document.querySelector(".section4-services");
+  var services = document.getElementById("services");
+  var section5Alaqsa = document.getElementById("section5-alaqsa");
+  var section6Omar = document.getElementById("section6-Omar");
+  var section7Live = document.getElementById("section7-live");
+  var section8Visa = document.getElementById("section8-visa");
+
+  if (scrollPosition >= section4Offset - window.innerHeight / 2) {
+    section4Body.classList.add("visible");
+  }
+
+  if (scrollPosition >= section4Offset + section4Body.offsetHeight) {
+    section4Services.classList.add("visible");
+  }
+
+  if (scrollPosition >= services.offsetTop - window.innerHeight / 2) {
+    services.classList.add("visible");
+  }
+
+  if (scrollPosition >= section5Alaqsa.offsetTop - window.innerHeight / 2) {
+    section5Alaqsa.classList.add("visible");
+  }
+
+  if (scrollPosition >= section6Omar.offsetTop - window.innerHeight / 2) {
+    section6Omar.classList.add("visible");
+  }
+
+  if (scrollPosition >= section7Live.offsetTop - window.innerHeight / 2) {
+    section7Live.classList.add("visible");
+  }
+
+  if (scrollPosition >= section8Visa.offsetTop - window.innerHeight / 2) {
+    section8Visa.classList.add("visible");
+  }
+});
+
+</script>
 </body>
 
 </html>

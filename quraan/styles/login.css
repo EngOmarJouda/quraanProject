@@ -109,7 +109,6 @@ a {
     border-radius: 10px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    margin-top: 1.5rem;
     background: #fffbfb;
 }
 
@@ -122,4 +121,25 @@ a {
 
 .login-form .input-group {
     width: 100%;
+}
+
+.remeber-and-sure {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.login-now {
+    width: 570px;
+    color: #ffffff;
+    background-color: #DDA738;
+}
+
+.creadt-acc {
+    color: #415898;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
 }

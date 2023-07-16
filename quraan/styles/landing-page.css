@@ -206,6 +206,26 @@ a {
 
 .menuIcon {
     margin-top: 5px;
+
+}
+
+
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+
+
+.theprayers {
+    animation: scale 2s infinite alternate;
+
 }
 
 @media (max-width: 768px) {
@@ -224,13 +244,39 @@ a {
         margin-bottom: 40px;
         display: none;
     }
+
+    .calender {
+        flex-wrap: wrap;
+
+    }
+
+    .todayDate {
+        flex-wrap: wrap;
+        gap: 23px !important;
+
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, .9) !important;
+}
+
+.nav-item .login:hover {
+    color: #ffffff;
+    background-color: #344275;
+    border-color: #344275;
 }
 
 /* end nav bar *******************************************************************************************************************************/
 
 /* start section two ************************************************************************************************************************/
 .discreption-one {
-    padding: 60px 97px 50px 97px;
+    padding: 60px 80px 50px 80px;
     color: #ffffff;
     direction: rtl;
     line-height: 56px;
@@ -341,12 +387,43 @@ a {
     left: 11px;
 }
 
+.section4-body,
+.section4-services,
+#services,
+#section5-alaqsa,
+#section6-Omar,
+#section7-live,
+#section8-visa {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
 
+.section4-body.visible,
+.section4-services.visible,
+#services.visible,
+#section5-alaqsa.visible,
+#section6-Omar.visible,
+#section7-live.visible,
+#section8-visa.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#myElement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 .custom-radio input {
     position: absolute;
     opacity: 0;
+    left: 0px;
     cursor: pointer;
+    width: 227px;
+    height: 137px;
 }
 
 .checkmark {

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+			integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<!--<link href="styles/navbar.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/footer.css" />
+		<link href="styles/shared.css" rel="stylesheet" />-->
+		<link rel="stylesheet" href="../styles/fathers-a8saat.css" />
+		<title>المقرأة</title>
+	</head>
+	<body>
+		<!-- Start Navbar -->
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg">
+			<div id="navbar-for-notifications" class="container-fluid">
+				<!-- <a href="#" class="nav-item nav-link">Login</a> -->
+				<div class="sidebar" id="sidebar">
+					<div class="user-photo">
+						<div class="photo-contaniner">
+							<img src="../assets/abuyahia.svg" alt="" />
+						</div>
+						<div class="greeting">
+							<h5>مرحباً 👋</h5>
+							<p style="font-weight: bold">ابو يحيى</p>
+						</div>
+					</div>
+
+					<ul>
+						<li>
+							<a href="#" >
+								<img src="../assets/childs.svg" alt="" />
+								أبنائي</a
+							>
+						</li>
+						<li>
+							<a href="#" >
+								<img src="../assets/calendar-2.svg" alt="" />
+								جدول التعليم</a
+							>
+						</li>
+						<li>
+							<a href="#" class="active">
+								<img src="../assets/award.svg" alt="" />
+								التقييم والملاحظات</a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../assets/brifecase-tick.png" alt="" />
+								حقيبة ولي الأمر</a
+							>
+						</li>
+						<li>
+							<a href="#">
+								<img src="../assets/dollar-circle.svg" alt="" />
+								الأقساط الدراسية</a
+							>
+						</li>
+
+						<li style="margin-top: 20%">
+							<button
+								type="button"
+								class="btn btn-light light-below"
+								style="
+									background-color: #fff;
+									display: flex;
+									gap: 3%;
+									border-radius: 10px;
+									width: 256%;
+								"
+							>
+								<img src="../assets/global.svg" alt="" />
+								اللغة
+							</button>
+                            <!-- <div class="popup" id="popup">
+                                <h3>Language Selection</h3>
+                                <p>Choose your preferred language:</p>
+                                Place your language selection options or content here 
+                                <button type="button" onclick="closePopup()">Close</button>
+                            </div> -->
+						</li>
+
+						<li>
+							<button
+								type="button"
+								class="btn btn-light light-below"
+								style="
+									background-color: #fff;
+									display: flex;
+									gap: 3%;
+									border-radius: 10px;
+									width: 183%;
+									margin-top: -28px;
+								"
+							>
+								<img src="../assets/notification-bing2.png" alt="" />
+								الأشعارات
+							</button>
+						</li>
+						<li>
+							<a
+								href=""
+								style="
+									color: #fd2323;
+									border-top: 1px dashed #ebe5e3;
+									width: 149%;
+								"
+							>
+								<img src="../assets/SignOut.svg" alt="" />
+								تسجيل الخروج
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content">
+					<!-- Content area -->
+				</div>
+				<button type="button" id="toggleSidebarBtn">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-nav">
+					<!-- <a href="#" class="navbar-brand">Brand</a> -->
+
+					<div class="collapse navbar-collapse collapseDiv" id="navbarCollapse">
+						<div class="navbar-nav">
+							<a href="#" class="nav-item nav-link active">الرئيسية</a>
+							<a href="#" class="nav-item nav-link">خدماتنا</a>
+							<a href="#" class="nav-item nav-link">تواصل معنا</a>
+							<a href="#" class="nav-item nav-link" tabindex="-1">من نحن</a>
+						</div>
+					</div>
+				</div>
+				<div class="menuIcon">
+					<a href="">
+						<img src="../assets/logo-nav.svg" alt="" />
+					</a>
+				</div>
+				<button
+					type="button"
+					class="navbar-toggler"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarCollapse"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</nav>
+		<div class="conatiner-profile">
+			<div class="profile">
+				
+				<div class="user-profile">
+               
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                         
+                    </div>
+
+                      </div>
+
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                     
+                    </div>
+
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                     
+                    </div>
+
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                         
+                    </div>
+
+                      </div>
+                      <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                         
+                    </div>
+
+                      </div>
+					  <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                       
+                    </div>
+
+                      </div>
+					  <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="../assets/Rectangle 30292.png" alt="Card image cap">
+						<div class="rateing">
+							<img src="../assets/Group 48095558.svg" alt="">
+							<p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+						</div>
+                        <div class="card-body">
+                          <h5 class="card-title">يحيى محمد ابو علي</h5>
+                          <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+                          <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+                        
+                    </div>
+
+                      </div>
+					  
+                  
+    </div>
+</div>
+<!-- <div class="profile">
+				
+    <div class="user-profile">
+   
+        <div class="card cardoo" style="">
+            <img class="card-img-top2" src="../assets/Rectangle 30292.png" alt="Card image cap">
+            <div class="rateing ratingo">
+                <img src="../assets/Group 48095558.svg" alt="">
+                <p style="margin-bottom: unset !important;color: #FFF;text-align: right;font-size: 16px;font-family: Cairo;font-style: normal;font-weight: 500;line-height: 20px;">ممتاز</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">يحيى محمد ابو علي</h5>
+              <p class="card-text">تعليم وتحفيظ القرآن الكريم والسنة النبوية</p>
+              <p class="card-text2" >اتم حفظ خمسة أجزاء من القرآن الكريم</p>
+             
+        </div>     
+</div>
+</div>
+</div> -->
+
+
+</div>
+
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+<script src="assets/https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="assets/https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="js/login.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			const checkbox = document.querySelector(
+				".custom-radio input[type='radio']"
+			);
+			const checkmark = document.querySelector(".custom-radio .checkTheVisa");
+
+			checkbox.addEventListener("change", function () {
+				if (this.checked) {
+					checkmark.style.display = "block";
+				} else {
+					checkmark.style.display = "none";
+				}
+			});
+		</script>
+
+		<script>
+			const toggleSidebarBtn = document.getElementById("toggleSidebarBtn");
+			const sidebar = document.getElementById("sidebar");
+
+			toggleSidebarBtn.addEventListener("click", function () {
+				sidebar.classList.toggle("hidden");
+			});
+
+			window.addEventListener("resize", () => {
+				var viewportWidth =
+					window.innerWidth || document.documentElement.clientWidth;
+				if (viewportWidth <= 768) {
+					document.getElementById("sidebar").style.display = "none";
+					document.getElementById("toggleSidebarBtn").style.display = "block";
+				} else {
+					document.getElementById("sidebar").style.display = "block";
+					document.getElementById("toggleSidebarBtn").style.display = "none";
+				}
+			});
+
+			$("#toggleSidebarBtn").on("click", () => {
+				if (document.getElementById("sidebar").style.display == "block")
+					document.getElementById("sidebar").style.display = "none";
+				else document.getElementById("sidebar").style.display = "block";
+			});
+
+
+
+            !function() {
+
+var today = moment();
+
+function Calendar(selector, events) {
+  this.el = document.querySelector(selector);
+  this.events = events;
+  this.current = moment().date(1);
+  this.draw();
+  var current = document.querySelector('.today');
+  if(current) {
+    var self = this;
+    window.setTimeout(function() {
+      self.openDay(current);
+    }, 500);
+  }
+}
+
+Calendar.prototype.draw = function() {
+  //Create Header
+  this.drawHeader();
+
+  //Draw Month
+  this.drawMonth();
+
+  this.drawLegend();
+}
+
+Calendar.prototype.drawHeader = function() {
+  var self = this;
+  if(!this.header) {
+    //Create the header elements
+    this.header = createElement('div', 'header');
+    this.header.className = 'header';
+
+    this.title = createElement('h1');
+
+    var right = createElement('div', 'right');
+    right.addEventListener('click', function() { self.nextMonth(); });
+
+    var left = createElement('div', 'left');
+    left.addEventListener('click', function() { self.prevMonth(); });
+
+    //Append the Elements
+    this.header.appendChild(this.title); 
+    this.header.appendChild(right);
+    this.header.appendChild(left);
+    this.el.appendChild(this.header);
+  }
+
+  this.title.innerHTML = this.current.format('MMMM YYYY');
+}
+
+Calendar.prototype.drawMonth = function() {
+  var self = this;
+  
+  this.events.forEach(function(ev) {
+   ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
+  });
+  
+  
+  if(this.month) {
+    this.oldMonth = this.month;
+    this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
+    this.oldMonth.addEventListener('webkitAnimationEnd', function() {
+      self.oldMonth.parentNode.removeChild(self.oldMonth);
+      self.month = createElement('div', 'month');
+      self.backFill();
+      self.currentMonth();
+      self.fowardFill();
+      self.el.appendChild(self.month);
+      window.setTimeout(function() {
+        self.month.className = 'month in ' + (self.next ? 'next' : 'prev');
+      }, 16);
+    });
+  } else {
+      this.month = createElement('div', 'month');
+      this.el.appendChild(this.month);
+      this.backFill();
+      this.currentMonth();
+      this.fowardFill();
+      this.month.className = 'month new';
+  }
+}
+
+Calendar.prototype.backFill = function() {
+  var clone = this.current.clone();
+  var dayOfWeek = clone.day();
+
+  if(!dayOfWeek) { return; }
+
+  clone.subtract('days', dayOfWeek+1);
+
+  for(var i = dayOfWeek; i > 0 ; i--) {
+    this.drawDay(clone.add('days', 1));
+  }
+}
+
+Calendar.prototype.fowardFill = function() {
+  var clone = this.current.clone().add('months', 1).subtract('days', 1);
+  var dayOfWeek = clone.day();
+
+  if(dayOfWeek === 6) { return; }
+
+  for(var i = dayOfWeek; i < 6 ; i++) {
+    this.drawDay(clone.add('days', 1));
+  }
+}
+
+Calendar.prototype.currentMonth = function() {
+  var clone = this.current.clone();
+
+  while(clone.month() === this.current.month()) {
+    this.drawDay(clone);
+    clone.add('days', 1);
+  }
+}
+
+Calendar.prototype.getWeek = function(day) {
+  if(!this.week || day.day() === 0) {
+    this.week = createElement('div', 'week');
+    this.month.appendChild(this.week);
+  }
+}
+
+Calendar.prototype.drawDay = function(day) {
+  var self = this;
+  this.getWeek(day);
+
+  //Outer Day
+  var outer = createElement('div', this.getDayClass(day));
+  outer.addEventListener('click', function() {
+    self.openDay(this);
+  });
+
+  //Day Name
+  var name = createElement('div', 'day-name', day.format('ddd'));
+
+  //Day Number
+  var number = createElement('div', 'day-number', day.format('DD'));
+
+
+  //Events
+  var events = createElement('div', 'day-events');
+  this.drawEvents(day, events);
+
+  outer.appendChild(name);
+  outer.appendChild(number);
+  outer.appendChild(events);
+  this.week.appendChild(outer);
+}
+
+Calendar.prototype.drawEvents = function(day, element) {
+  if(day.month() === this.current.month()) {
+    var todaysEvents = this.events.reduce(function(memo, ev) {
+      if(ev.date.isSame(day, 'day')) {
+        memo.push(ev);
+      }
+      return memo;
+    }, []);
+
+    todaysEvents.forEach(function(ev) {
+      var evSpan = createElement('span', ev.color);
+      element.appendChild(evSpan);
+    });
+  }
+}
+
+Calendar.prototype.getDayClass = function(day) {
+  classes = ['day'];
+  if(day.month() !== this.current.month()) {
+    classes.push('other');
+  } else if (today.isSame(day, 'day')) {
+    classes.push('today');
+  }
+  return classes.join(' ');
+}
+
+Calendar.prototype.openDay = function(el) {
+  var details, arrow;
+  var dayNumber = +el.querySelectorAll('.day-number')[0].innerText || +el.querySelectorAll('.day-number')[0].textContent;
+  var day = this.current.clone().date(dayNumber);
+
+  var currentOpened = document.querySelector('.details');
+
+  //Check to see if there is an open detais box on the current row
+  if(currentOpened && currentOpened.parentNode === el.parentNode) {
+    details = currentOpened;
+    arrow = document.querySelector('.arrow');
+  } else {
+    //Close the open events on differnt week row
+    //currentOpened && currentOpened.parentNode.removeChild(currentOpened);
+    if(currentOpened) {
+      currentOpened.addEventListener('webkitAnimationEnd', function() {
+        currentOpened.parentNode.removeChild(currentOpened);
+      });
+      currentOpened.addEventListener('oanimationend', function() {
+        currentOpened.parentNode.removeChild(currentOpened);
+      });
+      currentOpened.addEventListener('msAnimationEnd', function() {
+        currentOpened.parentNode.removeChild(currentOpened);
+      });
+      currentOpened.addEventListener('animationend', function() {
+        currentOpened.parentNode.removeChild(currentOpened);
+      });
+      currentOpened.className = 'details out';
+    }
+
+    //Create the Details Container
+    details = createElement('div', 'details in');
+
+    //Create the arrow
+    var arrow = createElement('div', 'arrow');
+
+    //Create the event wrapper
+
+    details.appendChild(arrow);
+    el.parentNode.appendChild(details);
+  }
+
+  var todaysEvents = this.events.reduce(function(memo, ev) {
+    if(ev.date.isSame(day, 'day')) {
+      memo.push(ev);
+    }
+    return memo;
+  }, []);
+
+  this.renderEvents(todaysEvents, details);
+
+  arrow.style.left = el.offsetLeft - el.parentNode.offsetLeft + 27 + 'px';
+}
+
+Calendar.prototype.renderEvents = function(events, ele) {
+  //Remove any events in the current details element
+  var currentWrapper = ele.querySelector('.events');
+  var wrapper = createElement('div', 'events in' + (currentWrapper ? ' new' : ''));
+
+  events.forEach(function(ev) {
+    var div = createElement('div', 'event');
+    var square = createElement('div', 'event-category ' + ev.color);
+    var span = createElement('span', '', ev.eventName);
+
+    div.appendChild(square);
+    div.appendChild(span);
+    wrapper.appendChild(div);
+  });
+
+  if(!events.length) {
+    var div = createElement('div', 'event empty');
+    var span = createElement('span', '', 'No Events');
+
+    div.appendChild(span);
+    wrapper.appendChild(div);
+  }
+
+  if(currentWrapper) {
+    currentWrapper.className = 'events out';
+    currentWrapper.addEventListener('webkitAnimationEnd', function() {
+      currentWrapper.parentNode.removeChild(currentWrapper);
+      ele.appendChild(wrapper);
+    });
+    currentWrapper.addEventListener('oanimationend', function() {
+      currentWrapper.parentNode.removeChild(currentWrapper);
+      ele.appendChild(wrapper);
+    });
+    currentWrapper.addEventListener('msAnimationEnd', function() {
+      currentWrapper.parentNode.removeChild(currentWrapper);
+      ele.appendChild(wrapper);
+    });
+    currentWrapper.addEventListener('animationend', function() {
+      currentWrapper.parentNode.removeChild(currentWrapper);
+      ele.appendChild(wrapper);
+    });
+  } else {
+    ele.appendChild(wrapper);
+  }
+}
+
+Calendar.prototype.drawLegend = function() {
+  var legend = createElement('div', 'legend');
+  var calendars = this.events.map(function(e) {
+    return e.calendar + '|' + e.color;
+  }).reduce(function(memo, e) {
+    if(memo.indexOf(e) === -1) {
+      memo.push(e);
+    }
+    return memo;
+  }, []).forEach(function(e) {
+    var parts = e.split('|');
+    var entry = createElement('span', 'entry ' +  parts[1], parts[0]);
+    legend.appendChild(entry);
+  });
+  this.el.appendChild(legend);
+}
+
+Calendar.prototype.nextMonth = function() {
+  this.current.add('months', 1);
+  this.next = true;
+  this.draw();
+}
+
+Calendar.prototype.prevMonth = function() {
+  this.current.subtract('months', 1);
+  this.next = false;
+  this.draw();
+}
+
+window.Calendar = Calendar;
+
+function createElement(tagName, className, innerText) {
+  var ele = document.createElement(tagName);
+  if(className) {
+    ele.className = className;
+  }
+  if(innerText) {
+    ele.innderText = ele.textContent = innerText;
+  }
+  return ele;
+}
+}();
+
+!function() {
+var data = [
+  { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange' },
+  { eventName: 'Interview - Jr. Web Developer', calendar: 'Work', color: 'orange' },
+  { eventName: 'Demo New App to the Board', calendar: 'Work', color: 'orange' },
+  { eventName: 'Dinner w/ Marketing', calendar: 'Work', color: 'orange' },
+
+  { eventName: 'Game vs Portalnd', calendar: 'Sports', color: 'blue' },
+  { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue' },
+  { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue' },
+  { eventName: 'Game vs San Degio', calendar: 'Sports', color: 'blue' },
+
+  { eventName: 'School Play', calendar: 'Kids', color: 'yellow' },
+  { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow' },
+  { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow' },
+  { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow' },
+
+  { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green' },
+  { eventName: 'Bowling Team', calendar: 'Other', color: 'green' },
+  { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green' },
+  { eventName: 'Startup Weekend', calendar: 'Other', color: 'green' }
+];
+
+
+
+function addDate(ev) {
+  
+}
+
+var calendar = new Calendar('#calendar', data);
+
+}();
+
+    </script>
+		</script>
+	</body>
+</html>

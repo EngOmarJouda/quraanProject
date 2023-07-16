@@ -935,7 +935,7 @@ a {
 .card-body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -1018,7 +1018,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 1190px;
-    height: 200px;
+    height: 70px;
     border-radius: 19px !important;
 }
 
@@ -1554,4 +1554,28 @@ a {
     line-height: 35px;
     border-radius: 10px;
     background: linear-gradient(135deg, #3D5088 0%, #4F6BAA 100%);
+}
+
+
+.lecture-info {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #4A4A4A;
+
+}
+
+.date {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.time {
+    margin-top: 5px;
+}
+
+.location {
+    margin-top: 5px;
+    font-style: italic;
 }
